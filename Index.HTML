@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ Thống CLB - THPT Võ Nguyên Giáp</title>
+    <style>
+        :root {
+            --primary: #2c3e50; --accent: #e74c3c; --bg: #f8f9fa;
+        }
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; margin: 0; background: var(--bg); color: #333; }
+        header { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: white; padding: 3rem 1rem; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .author-tag { background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 20px; font-size: 0.9rem; }
+        
+        .container { max-width: 1100px; margin: auto; padding: 20px; }
+        
+        /* Table Style */
+        .schedule-section { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); margin-bottom: 40px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        th { background: #34495e; color: white; text-align: left; padding: 12px; }
+        td { padding: 12px; border-bottom: 1px solid #ddd; }
+        tr:hover { background: #f1f1f1; }
+
+        /* Club Grid */
+        .club-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .club-card { background: white; border-radius: 12px; overflow: hidden; transition: 0.3s; border: 1px solid #eee; }
+        .club-card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .club-img { width: 100%; height: 180px; background: #ddd; display: flex; align-items: center; justify-content: center; color: #666; font-style: italic; }
+        .club-info { padding: 20px; }
+        .club-info h3 { margin: 0 0 10px 0; color: #2980b9; }
+        .leader { font-size: 0.85rem; color: #7f8c8d; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>HỆ SINH THÁI CÂU LẠC BỘ</h1>
+    <h2>Trường THPT Võ Nguyên Giáp</h2>
+    <p class="author-tag">Người thực hiện: <b>Phạm Thị Trúc My - Lớp 12A3</b></p>
+</header>
+
+<div class="container">
+    <div class="schedule-section">
+        <h2 style="text-align: center; color: var(--primary);">📅 LỊCH SINH HOẠT TẬP TRUNG</h2>
+        <p style="text-align: center;"><b>Áp dụng từ:</b> 01/02/2026 | <b>Thời gian:</b> 14:00 Thứ Tư hằng tuần</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tuần</th>
+                    <th>Câu lạc bộ</th>
+                    <th>Người phụ trách</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Tuần 1</td><td>CLB STEM</td><td>Phan Thị Diệp</td></tr>
+                <tr><td>Tuần 1</td><td>CLB Văn hóa đọc</td><td>Vũ Thị Lan Hương</td></tr>
+                <tr><td>Tuần 2</td><td>CLB Sống xanh</td><td>Nguyễn Thị Thúy Hằng</td></tr>
+                <tr><td>Tuần 2</td><td>CLB Pháp luật</td><td>Phạm Thị Tám</td></tr>
+                <tr><td>Tuần 3</td><td>CLB Văn nghệ</td><td>Nguyễn Thị Ly</td></tr>
+                <tr><td>Tuần 4</td><td>CLB Tiếng Anh</td><td>Nguyễn Thanh Nhã</td></tr>
+                <tr><td>Tuần 4</td><td>CLB Thể dục thể thao</td><td>Đỗ Tấn Khương</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="club-grid">
+        <div class="club-card">
+            <div class="club-img">Thêm ảnh STEM (Đá quý & Khoa học)</div>
+            <div class="club-info">
+                <h3>CLB STEM</h3>
+                <p class="leader">Phụ trách: Cô Phan Thị Diệp</p>
+                <p>Khám phá thế giới qua lăng kính khoa học, từ địa chất đến công nghệ 4.0.</p>
+            </div>
+        </div>
+
+        <div class="club-card">
+            <div class="club-img">Thêm ảnh Ra mắt CLB Văn hóa đọc</div>
+            <div class="club-info">
+                <h3>CLB Văn hóa đọc</h3>
+                <p class="leader">Phụ trách: Cô Vũ Thị Lan Hương</p>
+                <p>Nơi kết nối những tâm hồn yêu sách và lan tỏa tri thức đến cộng đồng.</p>
+            </div>
+        </div>
+
+        <div class="club-card">
+            <div class="club-img">Thêm ảnh Đội bóng chuyền</div>
+            <div class="club-info">
+                <h3>CLB Thể dục thể thao</h3>
+                <p class="leader">Phụ trách: Thầy Đỗ Tấn Khương</p>
+                <p>Khỏe để học tập và bảo vệ Tổ quốc. Sân chơi của những trái tim đầy nhiệt huyết.</p>
+            </div>
+        </div>
+
+        <div class="club-card">
+            <div class="club-img">Thêm ảnh Biểu diễn văn nghệ</div>
+            <div class="club-info">
+                <h3>CLB Văn nghệ</h3>
+                <p class="leader">Phụ trách: Cô Nguyễn Thị Ly</p>
+                <p>Tỏa sáng tài năng âm nhạc, vũ đạo và giữ gìn nét đẹp văn hóa truyền thống.</p>
+            </div>
+        </div>
+
+        <div class="club-card">
+            <div class="club-img">Thêm ảnh Hoạt động môi trường</div>
+            <div class="club-info">
+                <h3>CLB Sống xanh</h3>
+                <p class="leader">Phụ trách: Cô Nguyễn Thị Thúy Hằng</p>
+                <p>Hành động nhỏ, ý nghĩa lớn vì một ngôi trường xanh - sạch - đẹp.</p>
+            </div>
+        </div>
+
+        <div class="club-card">
+            <div class="club-img">Thêm ảnh Buổi tuyên truyền pháp luật</div>
+            <div class="club-info">
+                <h3>CLB Pháp luật</h3>
+                <p class="leader">Phụ trách: Cô Phạm Thị Tám</p>
+                <p>Nâng cao ý thức thượng tôn pháp luật và kỹ năng sống cho học sinh.</p>
+            </div>
+        </div>
+
+        <div class="club-card">
+            <div class="club-img">Thêm ảnh Giao lưu kết nối</div>
+            <div class="club-info">
+                <h3>CLB Tiếng Anh</h3>
+                <p class="leader">Phụ trách: Cô Nguyễn Thanh Nhã</p>
+                <p>Môi trường năng động để tự tin giao tiếp và vươn ra thế giới.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer style="text-align: center; padding: 20px; color: #7f8c8d; font-size: 0.8rem;">
+    &copy; 2026 THPT Võ Nguyên Giáp - Thiết kế bởi Trúc My 12A3
+</footer>
+
+</body>
+</html>
